@@ -40,7 +40,7 @@
 # Sample Output 2:
 # 1 2 7 8
 
-n = int(input())
+# n = int(input())
 # list1 = []
 # for i in range(n):
 #     a = input()
@@ -119,7 +119,7 @@ n = int(input())
 # (1+0.02j)
 # Приятным сюрпризом данной функции, является то что она может создавать комплексное число из строки. Но с небольшой оговоркой, эта строка должна быть допустимым литералом комплексного числа:
 
-Komp_mult.py
-Komp_sum.py
-Komp_div.py
-Komp_sub.py
+# Komp_mult.py
+# Komp_sum.py
+# Komp_div.py
+# Komp_sub.py
