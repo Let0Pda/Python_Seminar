@@ -10,45 +10,48 @@
 
 # ЕШЕНИЕ ДЛЯ МАК -в системном терминале вот такую команду запустили: python3 -m pip install --upgrade pip
 
+'''
+РЕШЕНИЕ ДЛЯ WINDOWS - В Windows при установке Python необходимо было установить галочку для установки pip, установить путь Python в папку с:\Program Files, а не в User, и обязательно поставить галочку add PATH
+pip install - r requirements.txt\
+pip install - r requirements.txt
+pip freeze
+- m venv vene
+'''
 
-# РЕШЕНИЕ ДЛЯ WINDOWS - В Windows при установке Python необходимо было установить галочку для установки pip, установить путь Python в папку с:\Program Files, а не в User, и обязательно поставить галочку add PATH
-# pip install - r requirements.txt\
-# pip install - r requirements.txt
-# pip freeze
-# - m venv vene
+'''
+Николай
+Групповая работа [2]
 
-# Николай
-# Групповая работа [2]
+Учимся настраивать виртуальное окружение и работать с [PIP](https://pypi.org/)
 
-# Учимся настраивать виртуальное окружение и работать с [PIP](https://pypi.org/)
+В качестве пробы библиотек к программам предыдущего модуля подключить работу с XML \ JSON
 
-# В качестве пробы библиотек к программам предыдущего модуля подключить работу с XML \ JSON
+> Для тренировки можно создания телеграм-бота полезные ссылки:
+>
+>
+> [https://core.telegram.org/bots](https://core.telegram.org/bots)
+>
+> [https://github.com/python-telegram-bot/python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
+>
+> [https://core.telegram.org/bots/api#authorizing-your-bot](https://core.telegram.org/bots/api#authorizing-your-bot)
+>
+> [https://core.telegram.org/bots/api#available-methods](https://core.telegram.org/bots/api#available-methods)
+>
+> [https://core.telegram.org/bots/api#user](https://core.telegram.org/bots/api#user)
+>
+**Задача:** при помощи виртуального окружения и PIP реализовать решение задач с прошлых семинаров:
 
-# > Для тренировки можно создания телеграм-бота полезные ссылки:
-# >
-# >
-# > [https://core.telegram.org/bots](https://core.telegram.org/bots)
-# >
-# > [https://github.com/python-telegram-bot/python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
-# >
-# > [https://core.telegram.org/bots/api#authorizing-your-bot](https://core.telegram.org/bots/api#authorizing-your-bot)
-# >
-# > [https://core.telegram.org/bots/api#available-methods](https://core.telegram.org/bots/api#available-methods)
-# >
-# > [https://core.telegram.org/bots/api#user](https://core.telegram.org/bots/api#user)
-# >
-# **Задача:** при помощи виртуального окружения и PIP реализовать решение задач с прошлых семинаров:
+1. Напишите программу, удаляющую из текста все слова, содержащие "абв".
+2. Создайте программу для игры с конфетами человек против человека.
 
-# 1. Напишите программу, удаляющую из текста все слова, содержащие "абв".
-# 2. Создайте программу для игры с конфетами человек против человека.
+    Условие задачи: На столе лежит 2021 конфета. Играют два игрока делая ход друг после друга. Первый ход определяется жеребьёвкой. За один ход можно забрать не более чем 28 конфет. Все конфеты оппонента достаются сделавшему последний ход. Сколько конфет нужно взять первому игроку, чтобы забрать все конфеты у своего конкурента?
 
-#     Условие задачи: На столе лежит 2021 конфета. Играют два игрока делая ход друг после друга. Первый ход определяется жеребьёвкой. За один ход можно забрать не более чем 28 конфет. Все конфеты оппонента достаются сделавшему последний ход. Сколько конфет нужно взять первому игроку, чтобы забрать все конфеты у своего конкурента?
+    a) Добавьте игру против бота
 
-#     a) Добавьте игру против бота
+    b) Подумайте как наделить бота "интеллектом"
+'''
 
-#     b) Подумайте как наделить бота "интеллектом"
-
-# Бот абв
+''' Бот абв '''
 # async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 #     await update.message.reply_text(f'Hello {update.effective_user.first_name}')
 
@@ -75,7 +78,7 @@
 # def my_print(string):
 #     print(string)
 
-
+''' None'''
 # name = 'Вася'
 
 # # my_print = print(name)
@@ -86,6 +89,8 @@
 
 # print(my_len(name))
 # print(my_print(name))
+
+"""await"""
 # Ключевое слово await позволяет сопрограмме отдать контроль назад в главный цикл, который содержит порядок исполнения всех сопрограмм.
 
 # async def process():
@@ -94,9 +99,9 @@
 # Если Python встречает ключевое слово await то это можно описать так: - "отложить исполнение кода сопрограммы process() до тех пор, пока я не получу результат выполнения func(). В это время я займусь чем-нибудь другим".
 # pip install python-telegram-bot --pre
 
+'''Конфеты '''
 # from telegram import Update
 # from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
-
 
 # def bot_quantity():
 #     global candies
