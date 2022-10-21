@@ -23,31 +23,20 @@ pip freeze
 '''Групповая работа [2]
 
 Учимся настраивать виртуальное окружение и работать с [PIP](https://pypi.org/)
-
 В качестве пробы библиотек к программам предыдущего модуля подключить работу с XML \ JSON
-
 > Для тренировки можно создания телеграм-бота полезные ссылки:
->
->
 > [https://core.telegram.org/bots](https://core.telegram.org/bots)
->
 > [https://github.com/python-telegram-bot/python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
->
-> [https://core.telegram.org/bots/api#authorizing-your-bot](https://core.telegram.org/bots/api#authorizing-your-bot)
->
-> [https://core.telegram.org/bots/api#available-methods](https://core.telegram.org/bots/api#available-methods)
->
+> [https://core.telegram.org/bots/api#authorizing-your-bot](https://core.telegram.org/bots/api#authorizing-your-bot)>
+> [https://core.telegram.org/bots/api#available-methods](https://core.telegram.org/bots/api#available-methods)>
 > [https://core.telegram.org/bots/api#user](https://core.telegram.org/bots/api#user)
 >
 **Задача:** при помощи виртуального окружения и PIP реализовать решение задач с прошлых семинаров:
 
 1. Напишите программу, удаляющую из текста все слова, содержащие "абв".
 2. Создайте программу для игры с конфетами человек против человека.
-
     Условие задачи: На столе лежит 2021 конфета. Играют два игрока делая ход друг после друга. Первый ход определяется жеребьёвкой. За один ход можно забрать не более чем 28 конфет. Все конфеты оппонента достаются сделавшему последний ход. Сколько конфет нужно взять первому игроку, чтобы забрать все конфеты у своего конкурента?
-
     a) Добавьте игру против бота
-
     b) Подумайте как наделить бота "интеллектом"
 '''
 
@@ -159,3 +148,9 @@ pip freeze
     1. Создать калькулятор для работы с рациональными и комплексными числами, организовать меню, добавив в неё систему логирования
     2. Создать телефонный справочник с возможностью импорта и экспорта данных в нескольких форматах. 
 '''
+'''pip requirements.txt'''
+# from os import system
+# # скачивание библиотек хранящихся в файле requirements.txt
+# system('pip install -r requirements.txt')
+# # сохранение ссылок на библиотеки в файл requirements.txt
+# system('pip freeze > requirements.txt')
