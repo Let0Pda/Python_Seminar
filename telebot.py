@@ -31,17 +31,16 @@ def bot_message(message, pole=pole):
         else:
             pole[hod-1] = player
             bot.send_message(message.chat.id, draw_pole())
-            if player == 'X':
-                player = 'O'
-            else:
-                player = 'X'
+            player = 'O' if player == 'X' else 'X'
 
 
 def draw_pole():  # функция отрисовки игрового поля
     new_pole = '-------------\n'
     for i in range(3):
-        new_pole += '| ' + str(pole[0 + i*3]) + ' | ' + \
-            str(pole[1 + i*3]) + ' | ' + str(pole[2 + i*3]) + ' |\n'
+        new_pole += (
+            f'| {str(pole[0 + i * 3])} | {str(pole[1 + i * 3])} | {str(pole[2 + i * 3])}'
+            + ' |\n'
+        )
     new_pole += '-------------'
     return new_pole
 

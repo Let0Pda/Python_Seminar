@@ -45,16 +45,14 @@ def getMessage(message):
 def callback_func(query):
     global value, old_value
     data = query.data
-    if data == 'no':
-        pass
-    elif data == 'C':
-        value = ''
-    elif data == '<=':
+    if data == '<=':
         if value != '':
-            value = value[:len(value)-1]
+            value = value[:-1]
     elif data == '=':
         value = str(eval(value))
-    else:
+    elif data == 'C':
+        value = ''
+    elif data != 'no':
         value += data
     if value != old_value:
         if value == '':
