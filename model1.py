@@ -3,14 +3,12 @@ BASE = "base.csv"
 def edit(id, data):
     res = []
     with open(BASE, "r") as file:
-        base = file.read().split('\n') 
+        base = file.read().split('\n')
         for item in base:
             line = item.split(';')
             if line[0] == id:
                 line = data
-                res.append(line)
-            else:
-                res.append(line)
+            res.append(line)
     with open(BASE, "w") as file:
         for data in res:
             file.writelines(f'{data[0]};{data[1]};{data[2]};{data[3]};{data[4]};{data[5]};{data[6]};{data[7]}\n')
